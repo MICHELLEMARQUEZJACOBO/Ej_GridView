@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marquez/gridviewarticulos.dart';
 
 class PaguinaInicial extends StatefulWidget {
   PaguinaInicial({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _PaguinaInicialState extends State<PaguinaInicial> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Listado de computadoras"),
+          title: const Text("Listado de computadorass"),
         ),
         body: GridView.custom(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
