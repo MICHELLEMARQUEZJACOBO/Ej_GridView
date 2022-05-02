@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:marquez/gridviewarticulos.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(CentroComputoApp());
 }
 
-class MyApp extends StatelessWidget {
+class CentroComputoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.pink,
         ),
-        home: MyHomePage());
+        home: PaguinaInicial());
   }
 }
 
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter GridView"),
+          title: const Text("Centro computo"),
         ),
         body: GridView.custom(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

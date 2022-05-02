@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key}) : super(key: key);
+class PaguinaInicial extends StatefulWidget {
+  PaguinaInicial({Key? key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _PaguinaInicialState createState() => _PaguinaInicialState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _PaguinaInicialState extends State<PaguinaInicial> {
   List<String> images = [
     "assets/images/gh.jpg",
     "assets/images/oh.jpg",
@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter GridView"),
+          title: const Text("Listado de computadoras"),
         ),
         body: GridView.custom(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
